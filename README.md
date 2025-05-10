@@ -44,11 +44,11 @@
 
 ###
 
-<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v2.png"  />
+<br clear="both">
 
 ###
 
-<p><br><br></p>
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v2.png"  />
 
 ###
 
