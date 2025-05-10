@@ -8,8 +8,8 @@
 
 
     <item
-        android:id="@+id/football"
-        android:title="@string/football"
+        android:id="@+id/soccer"
+        android:title="@string/soccer"
         android:icon="@drawable/ic_soccer"
         />
 

@@ -1,5 +1,6 @@
 package com.swayni.sportsbettingapp.ui.bulletin.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.swayni.sportsbettingapp.core.base_viewmodel.SubBaseViewModel
 import com.swayni.sportsbettingapp.core.data.model.ResultData

@@ -11,6 +11,7 @@ import com.swayni.sportsbettingapp.domain.model.SelectedModel
 import com.swayni.sportsbettingapp.ui.odds_list.adapter.OddsListAdapter
 import com.swayni.sportsbettingapp.ui.odds_list.viewmodel.OddsLisViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.Locale
 
 @AndroidEntryPoint
 class OddsListFragment : BaseFragment<FragmentOddsListBinding, OddsLisViewModel>(
@@ -49,12 +50,15 @@ class OddsListFragment : BaseFragment<FragmentOddsListBinding, OddsLisViewModel>
                             rate *= odd.price ?: 1.0
                         }
                         binding.bottomContainer.isVisible(rate > 1)
-                        binding.rate.text = "$rate"
+                        binding.rate.text = String.format(Locale.getDefault(),"%.2f", rate)
+                        binding.count.text = "${data.size}"
+
                         adapter.updateList(data)
                     }
 
                     it.allDelete?.let {
                         binding.rate.text = "0"
+                        binding.count.text = "0"
                         adapter.allDelete()
                     }
                 }

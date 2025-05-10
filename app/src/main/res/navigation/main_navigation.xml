@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/fragmentMenu">
+    app:startDestination="@id/fragmentSportLeague">
 
 
-    <fragment android:id="@+id/fragmentMenu"
-        android:name="com.swayni.sportsbettingapp.ui.menu.presentation.FragmentMenu"
+    <fragment android:id="@+id/fragmentSportLeague"
+        android:name="com.swayni.sportsbettingapp.ui.sport_menu.presentation.SportLeagueFragment"
         tools:layout="@layout/fragment_menu">
 
         <action
-            android:id="@+id/action_fragmentMenu_to_fragmentBulletin"
+            android:id="@+id/action_fragmentSportLeague_to_fragmentBulletin"
             app:destination="@id/fragmentBulletin"
             app:enterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
             app:exitAnim="@anim/slide_out_left"
             />
 
-        <action android:id="@+id/action_fragmentMenu_to_fragmentOddsList"
+        <action android:id="@+id/action_fragmentSportLeague_to_fragmentOddsList"
             app:destination="@id/fragmentOddsList"
             app:enterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
@@ -27,7 +27,7 @@
     </fragment>
 
     <fragment android:id="@+id/fragmentBulletin"
-        android:name="com.swayni.sportsbettingapp.ui.bulletin.presentation.FragmentBulletin"
+        android:name="com.swayni.sportsbettingapp.ui.bulletin.presentation.BulletinFragment"
         tools:layout="@layout/fragment_bulletin">
 
         <action

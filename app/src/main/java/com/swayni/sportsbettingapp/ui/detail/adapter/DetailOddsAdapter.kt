@@ -3,17 +3,15 @@ package com.swayni.sportsbettingapp.ui.detail.adapter
 import android.annotation.SuppressLint
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
-import com.swayni.sportsbettingapp.R
 import com.swayni.sportsbettingapp.core.component.BettingButton
 import com.swayni.sportsbettingapp.core.enums.SelectedAction
 import com.swayni.sportsbettingapp.data.model.EventModel
 import com.swayni.sportsbettingapp.data.model.Markets
 import com.swayni.sportsbettingapp.data.model.Outcomes
 import com.swayni.sportsbettingapp.databinding.ItemDetailOddsBinding
-import com.swayni.sportsbettingapp.domain.model.SelectedModel
 import com.swayni.sportsbettingapp.domain.model.DetailOddsModel
+import com.swayni.sportsbettingapp.domain.model.SelectedModel
 
 class DetailOddsAdapter (
     private val selectedListener: (SelectedModel?, SelectedAction) -> Unit) : RecyclerView.Adapter<DetailOddsAdapter.ViewHolder>() {
@@ -104,8 +102,6 @@ class DetailOddsAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindHolder(list[position].markets, list[position].bookmaker)
-
-        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.fall_down)
     }
 
     @SuppressLint("NotifyDataSetChanged")

@@ -6,7 +6,7 @@
 
     <string name="league_list">League List</string>
 
-    <string name="football">Football</string>
+    <string name="soccer">Soccer</string>
     <string name="basketball">Basketball</string>
     <string name="tennis">Tennis</string>
     <string name="all">All</string>
@@ -15,5 +15,6 @@
     <string name="delete">Delete</string>
     <string name="search">Search</string>
     <string name="rate">Rate : </string>
+    <string name="odd_count">: Odd Count</string>
 
 </resources>
