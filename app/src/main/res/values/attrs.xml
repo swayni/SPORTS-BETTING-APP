@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuButton">
+        <attr name="textValue" format="string" />
+        <attr name="iconValue" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="BettingButton">
+        <attr name="titleValue" format="string" />
+        <attr name="betText" format="string" />
+        <attr name="isChecked" format="boolean" />
+        <attr name="isEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

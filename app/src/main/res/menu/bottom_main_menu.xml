@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all"
+        android:title="@string/all"
+        android:icon="@drawable/ic_density_small"/>
+
+
+    <item
+        android:id="@+id/football"
+        android:title="@string/football"
+        android:icon="@drawable/ic_soccer"
+        />
+
+    <item
+        android:id="@+id/basketball"
+        android:title="@string/basketball"
+        android:icon="@drawable/ic_basketball"
+        />
+
+    <item
+        android:id="@+id/tennis"
+        android:title="@string/tennis"
+        android:icon="@drawable/ic_tennis"/>
+
+
+</menu>

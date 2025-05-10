@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">SPORTS BETTING APP</string>
+
+    <string name="menu_image" translatable="false">menu_image</string>
+    <string name="basket" translatable="false">basket</string>
+
+    <string name="league_list">League List</string>
+
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="tennis">Tennis</string>
+    <string name="all">All</string>
+    <string name="bulletin">Bulletin</string>
+
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="rate">Rate : </string>
+
+</resources>

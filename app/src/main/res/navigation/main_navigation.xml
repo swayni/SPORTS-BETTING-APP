@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentMenu">
+
+
+    <fragment android:id="@+id/fragmentMenu"
+        android:name="com.swayni.sportsbettingapp.ui.menu.presentation.FragmentMenu"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentBulletin"
+            app:destination="@id/fragmentBulletin"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_left"
+            />
+
+        <action android:id="@+id/action_fragmentMenu_to_fragmentOddsList"
+            app:destination="@id/fragmentOddsList"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment android:id="@+id/fragmentBulletin"
+        android:name="com.swayni.sportsbettingapp.ui.bulletin.presentation.FragmentBulletin"
+        tools:layout="@layout/fragment_bulletin">
+
+        <action
+            android:id="@+id/action_fragmentBulletin_to_fragmentDetail"
+            app:destination="@id/fragmentSportOddsDetail"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_fragmentBulletin_to_fragmentOddsList"
+            app:destination="@id/fragmentOddsList"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <argument android:name="sportKey" app:argType="string" app:nullable="false" android:defaultValue="soccer_china_superleague" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSportOddsDetail"
+        android:name="com.swayni.sportsbettingapp.ui.detail.presentation.SportOddsDetailFragment"
+        tools:layout="@layout/fragment_sport_odds_detail">
+
+        <action
+            android:id="@+id/action_fragmentSportOddsDetail_to_fragmentOddsList"
+            app:destination="@id/fragmentOddsList"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <argument android:name="sportKey" app:argType="string" app:nullable="false" android:defaultValue="soccer_china_superleague" />
+        <argument android:name="eventId" app:argType="string" app:nullable="false" android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentOddsList"
+        android:name="com.swayni.sportsbettingapp.ui.odds_list.presentation.OddsListFragment"
+        tools:layout="@layout/fragment_odds_list"/>
+
+</navigation>

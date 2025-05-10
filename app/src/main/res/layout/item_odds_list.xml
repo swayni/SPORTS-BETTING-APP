@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <com.daimajia.swipe.SwipeLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llSplitDelete"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_midnight_green_radius_20"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/delete"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/odd_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="17.5dp"
+                app:strokeColor="@color/midnight_green"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/container_league"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="6dp"
+                        android:paddingHorizontal="8dp"
+                        android:background="@color/midnight_green"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:id="@+id/league"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:layout_gravity="start"
+                            android:textStyle="bold"
+                            tools:text="NBA - Play-Off"
+                            android:textSize="14sp"
+                            android:ellipsize="end"
+                            />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            tools:text="Bugün 02:00"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/default_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/container_league"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <TextView
+                            android:id="@+id/teams_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            tools:text="Boston - New York"
+                            android:textSize="14sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="1.2"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/midnight_green"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            />
+                        <com.swayni.sportsbettingapp.core.component.BettingButton
+                            android:id="@+id/betting1Button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:isChecked="false"
+                            app:betText="0.2"
+                            app:titleValue="MS2"
+                            app:isEnabled="false"
+                            android:visibility="visible"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </com.daimajia.swipe.SwipeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
