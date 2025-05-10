@@ -23,3 +23,39 @@
 <img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_1_v2.png"  />
 
 ###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_2_v1.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_2_v2.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_2_v3.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v1.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v2.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v3.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_4_v1.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_4_v2.png"  />
+
+###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_4_v3.png"  />
+
+###
