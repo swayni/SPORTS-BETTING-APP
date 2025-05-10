@@ -48,9 +48,11 @@
 
 ###
 
-<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v3.png"  />
+<p></p>
 
 ###
+
+<img align="left" height="180" src="https://github.com/swayni/SPORTS-BETTING-APP/blob/master/screenshot_app/Screenshot_page_3_v3.png"  />
 
 ###
 
